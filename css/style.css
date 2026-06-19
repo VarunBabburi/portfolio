@@ -1,0 +1,284 @@
+/* --- High-End Futuristic Modern Fancy Glass Themes --- */
+:root, [data-theme="light"] {
+  --bg-primary: #f3f4fd; /* Clean, premium crisp futuristic light cosmic surface tone */
+  --bg-secondary: rgba(255, 255, 255, 0.85); /* Pure crystal liquid glass look layer properties scale tracking elements setup values checking framework */
+  --bg-soft-primary: #e4e7ff;
+  --bg-soft-warning: #fff0d0;
+  --bg-soft-success: #def7ec;
+  --text-main: #2b254a; 
+  --text-muted: #726c92;
+  --text-heading: #181236;
+  --primary-color: #5b1ae6; /* Rich tech aesthetic vibrant indigo spectrum accent settings */
+  --accent-color: #ff9500;
+  --border-color: rgba(91, 26, 230, 0.08); /* Sophisticated subtle soft neon blend boundaries elements processing tags */
+  --card-bg: rgba(255, 255, 255, 0.9); /* Fluid elegant translucent backdrop dynamic panels templates */
+  --input-bg: #edf0fc;
+}
+
+[data-theme="dark"] {
+  --bg-primary: #0a0814; 
+  --bg-secondary: #120f24;
+  --bg-soft-primary: #1c173a;
+  --bg-soft-warning: #2b2114;
+  --bg-soft-success: #11281a;
+  --text-main: #d1cee7;
+  --text-muted: #8c88a5;
+  --text-heading: #ffffff;
+  --primary-color: #8c52ff;
+  --accent-color: #ffb03a;
+  --border-color: #211c3d;
+  --card-bg: #131026;
+  --input-bg: #1c1836;
+}
+
+/* --- Reset Rules --- */
+/* --- Global Text & Structure Balance Overrides --- */
+body {
+  font-family: 'Josefin Sans', sans-serif !important;
+  font-weight: 400; /* Original weight mapping setup control metrics loop processing functions */
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  transition: background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1), color 0.4s ease;
+  overflow-x: hidden;
+}
+
+/* Explicit heading overrides to capture that exact classic look */
+h1, h2, h3, h4, h5, h6, .heading-text {
+  font-family: 'Josefin Sans', sans-serif !important;
+  font-weight: 700; /* Original bold standard variables matching settings structure */
+  color: var(--text-heading) !important;
+  letter-spacing: -0.5px;
+}
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+/* --- Luxury Fancy Glass Navbar --- */
+
+.navbar {
+  background-color: rgba(var(--bg-primary), 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-color);
+  padding: 1.2rem 0;
+}
+
+.brand-logo {
+  color: var(--text-heading);
+  letter-spacing: -1px;
+}
+
+.navbar-nav .nav-link {
+  color: var(--text-main);
+  font-weight: 600;
+  padding: 0.5rem 1.2rem !important;
+  border-radius: 20px;
+  transition: all 0.25s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--primary-color);
+  background-color: var(--bg-soft-primary);
+}
+
+.btn-theme {
+  background: var(--bg-secondary);
+  color: var(--accent-color);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.btn-theme:hover {
+  transform: rotate(15deg) scale(1.05);
+}
+
+/* --- Fancy Modern Hero Section --- */
+/* --- High-End Modern Futuristic Premium Glass & Orange Tint Hero Grid --- */
+.hero-section {
+  min-height: calc(100vh - 88px);
+  padding: 80px 0;
+  /* Light mode running logic frame parameters balance mapping gradient setup matching */
+  background: 
+    radial-gradient(circle at 10% 20%, rgba(192, 82, 3, 0.12) 0%, transparent 40%), /* Premium Vintage Orange layout injection dynamic point setup variables processing control layer */
+    radial-gradient(circle at 90% 80%, rgba(208, 214, 28, 0.08) 0%, transparent 50%),
+    var(--bg-primary);
+  transition: background 0.4s ease-in-out;
+}
+
+/* Dark mode configurations matrix background overlay swap parameter rules verification matching target loop */
+[data-theme="dark"] .hero-section {
+  background: 
+    radial-gradient(circle at 10% 20%, rgba(255, 176, 58, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(140, 82, 255, 0.04) 0%, transparent 50%),
+    var(--bg-primary);
+}
+
+.bg-soft-primary { background-color: var(--bg-soft-primary) !important; color: var(--primary-color) !important; }
+.bg-soft-warning { background-color: var(--bg-soft-warning) !important; color: var(--accent-color) !important; }
+.bg-soft-success { background-color: var(--bg-soft-success) !important; color: #2b8a3e !important; }
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+.btn-primary:hover {
+  background-color: var(--primary-color);
+  filter: brightness(1.1);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(98, 34, 255, 0.3);
+}
+
+.btn-outline-secondary {
+  color: var(--text-main);
+  border-color: var(--border-color);
+  background: var(--bg-secondary);
+}
+.btn-outline-secondary:hover {
+  background: var(--bg-soft-primary);
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.hero-avatar {
+  border-radius: 32px;
+  animation: smoothFloat 5s ease-in-out infinite;
+  box-shadow: 0 30px 60px rgba(98, 34, 255, 0.15);
+  border: 6px solid var(--bg-secondary);
+}
+
+@keyframes smoothFloat {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(1deg); }
+}
+
+/* --- Premium Skills Cards --- */
+.skill-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 24px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.02);
+}
+
+.skill-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(98, 34, 255, 0.1);
+  border-color: var(--primary-color);
+}
+
+/* --- High-End Project Portfolio Filter Deck --- */
+.btn-filter {
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  background: var(--bg-secondary);
+  border-radius: 30px;
+  padding: 8px 24px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+}
+
+.btn-filter.active, .btn-filter:hover {
+  background-color: var(--primary-color);
+  color: #ffffff !important;
+  border-color: var(--primary-color);
+  box-shadow: 0 8px 16px rgba(98, 34, 255, 0.2);
+}
+
+.project-card {
+  background-color: var(--card-bg) !important;
+  border: 1px solid var(--border-color) !important;
+  border-radius: 24px !important;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 24px 48px rgba(0,0,0,0.08) !important;
+}
+
+.card-text-para {
+  color: var(--text-muted) !important;
+}
+
+/* --- Dark Mode Contact Form Bug Fix Layout --- */
+.contact-form-box {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+}
+
+/* Text-dark-mode-override fix: Forces label headings to use correct responsive contrast colors */
+.text-dark-mode-override, .small-title, h6 {
+  color: var(--text-main) !important;
+}
+
+.input-custom {
+  background-color: var(--input-bg) !important;
+  border: 1px solid var(--border-color) !important;
+  color: var(--text-main) !important; /* Fixed text bleeding invisible in dark mode */
+  padding: 16px;
+  border-radius: 14px;
+}
+
+.input-custom::placeholder {
+  color: var(--text-muted);
+  opacity: 0.7;
+}
+
+.input-custom:focus {
+  background-color: var(--bg-secondary) !important;
+  color: var(--text-main) !important;
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 0 4px var(--bg-soft-primary) !important;
+}
+
+.icon-box-shape {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+/* --- Scroll To Top Floating Anchor --- */
+#btn-back-to-top {
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  display: none;
+  z-index: 99;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  border: none;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+#btn-back-to-top:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(98, 34, 255, 0.3);
+}
+
+footer {
+  background-color: var(--bg-secondary);
+  color: var(--text-muted);
+}
