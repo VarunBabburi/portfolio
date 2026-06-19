@@ -282,3 +282,11 @@ footer {
   background-color: var(--bg-secondary);
   color: var(--text-muted);
 }
+/* Dark mode active ఉన్నప్పుడు black logos ని white లా మార్చడానికి */
+[data-bs-theme="dark"] .theme-icon-invert {
+  filter: invert(1) !important;
+}
+[data-theme="dark"] .theme-icon-invert,
+body.dark-mode .theme-icon-invert {
+  filter: invert(1) !important;
+}
